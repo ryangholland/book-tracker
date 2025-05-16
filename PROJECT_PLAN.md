@@ -87,6 +87,24 @@ book-tracker/
 - Reading statistics
 
 ## Git Workflow & Conventions
+
+### Branch Strategy
+- `main`: Production-ready code
+- `dev`: Development branch, main integration branch for features
+- Feature branches: Created from `dev` for each new feature
+  - Format: `feature/feature-name`
+  - Example: `feature/add-book-form`
+  - Merge back into `dev` when complete
+
+### Branch Workflow
+1. Create feature branch from `dev`
+2. Make changes in feature branch
+3. Commit using Conventional Commits
+4. Push feature branch to GitHub
+5. Create Pull Request to merge into `dev`
+6. After review, merge into `dev`
+7. Periodically merge `dev` into `main` for releases
+
 ### Conventional Commits
 We follow the Conventional Commits specification for commit messages:
 
