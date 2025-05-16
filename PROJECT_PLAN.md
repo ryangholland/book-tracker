@@ -138,6 +138,14 @@ Examples:
 - Write clear, descriptive commit messages
 - Reference issue numbers when applicable
 
+## Design Approach
+- Start with clean, minimal Tailwind CSS styling
+- Focus on functionality and user experience first
+- Establish basic consistency in spacing and typography
+- Use a simple, accessible color scheme
+- Iterate and enhance visual design based on needs
+- Keep components modular for easy style updates
+
 ## Notes
 - Starting with frontend development using mock data
 - Using TailwindCSS for styling
