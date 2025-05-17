@@ -35,4 +35,7 @@ yarn-error.log*
 
 # Prisma
 prisma/*.db
-prisma/migrations/ 
+prisma/migrations/
+
+# Personal Cursor workflow
+CURSOR_WORKFLOW.md 
