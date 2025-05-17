@@ -33,7 +33,9 @@ function App() {
   const [currentStatus, setCurrentStatus] = useState('wantToRead');
 
   // Filter books by current status
-  const filteredBooks = books.filter(book => book.status === currentStatus);
+  const filteredBooks = currentStatus === 'all'
+    ? books
+    : books.filter(book => book.status === currentStatus);
 
   // Placeholder callbacks
   const handleEdit = (book) => { alert(`Edit book: ${book.title}`); };
