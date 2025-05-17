@@ -151,3 +151,57 @@ Examples:
 - Using TailwindCSS for styling
 - Following React best practices
 - Implementing responsive design 
+
+## Component Structure & Data Flow
+
+### Overview
+This section documents the main React components, their props, and state, as well as how data flows through the app.
+
+### Component Breakdown
+
+**App**
+- **State:**  
+  - `books` (array of book objects)
+  - `currentStatus` (string)
+  - `editingBook` (object or null)
+- **Props:** None
+
+**StatusTabs**
+- **Props:**  
+  - `currentStatus` (string)
+  - `onStatusChange` (function)
+- **State:** None
+
+**BookList**
+- **Props:**  
+  - `books` (array)
+  - `onEdit` (function)
+  - `onDelete` (function)
+  - `onStatusChange` (function)
+- **State:** None
+
+**BookCard**
+- **Props:**  
+  - `book` (object)
+  - `onEdit` (function)
+  - `onDelete` (function)
+  - `onStatusChange` (function)
+- **State:** None
+
+**BookForm**
+- **Props:**  
+  - `onSave` (function)
+  - `onCancel` (function)
+  - `initialData` (object, optional)
+- **State:**  [pp[]]
+  - Form fields: title, author, status, pages
+
+### Summary Table
+
+| Component   | Props                                                                 | State                |
+|-------------|-----------------------------------------------------------------------|----------------------|
+| App         | —                                                                     | books, status, edit  |
+| StatusTabs  | currentStatus, onStatusChange                                         | —                    |
+| BookList    | books, onEdit, onDelete, onStatusChange                               | —                    |
+| BookCard    | book, onEdit, onDelete, onStatusChange                                | —                    |
+| BookForm    | onSave, onCancel, initialData                                         | form fields          |
