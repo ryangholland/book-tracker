@@ -1,3 +1,8 @@
+import BookList from './components/BookList';
+import BookCard from './components/BookCard';
+import BookForm from './components/BookForm';
+import StatusTabs from './components/StatusTabs';
+
 function App() {
   return (
     <div className="min-h-screen bg-gray-100">
@@ -9,9 +14,13 @@ function App() {
         </div>
       </header>
       <main className="max-w-7xl mx-auto py-6 px-4">
-        <p className="text-gray-600">
-          Welcome to Book Tracker! Start adding your books to keep track of your reading journey.
-        </p>
+        <StatusTabs />
+        <div className="my-6">
+          <BookForm />
+        </div>
+        <BookList />
+        {/* Example BookCard usage, can be removed later */}
+        {/* <BookCard /> */}
       </main>
     </div>
   )
